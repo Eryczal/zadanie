@@ -9,6 +9,8 @@ class AiManager {
     }
 
     async sendMessage(message) {
+        console.log("Wysyłanie tekstu do OpenAI...");
+
         const response = await this.openAi.chat.completions.create({
             model: "gpt-4o-mini",
             messages: [

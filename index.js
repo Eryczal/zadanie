@@ -8,3 +8,4 @@ const fileManager = new FileManager();
 const data = await fileManager.loadText();
 const response = await aiManager.sendMessage(data);
 fileManager.generateFile(response);
+console.log("Gotowe");
